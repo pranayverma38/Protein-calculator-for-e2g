@@ -16,7 +16,7 @@
 <option value="veryActive">Very Active</option>
 <option value="extraActive">Extra Active</option>
 </select></div>
-<button type="button" onclick="calculateBMR()">CALCULATE PROTEIN INTAKE</button>
+<button type="button" onclick="calculateBMR()">CALCULATE BMR</button>
 <div id="result" class="result"></div>
 </form></div>
 <style><!--
@@ -155,7 +155,7 @@ function calculateBMR() {
     }
 
     var resultElement = document.getElementById('result');
-    resultElement.innerHTML = 'BMR : ' + bmr.toFixed(2).fontcolor("#07db3f") + ' grams/day';
+    resultElement.innerHTML = 'Required caloric intake : ' + bmr.toFixed(2).fontcolor("#07db3f") + ' Calories/day' ;
 
 
 
